@@ -8,15 +8,15 @@
 
 | Category | Projects |
 |---|---|
-| [🤖 AI & Machine Learning](#-ai--machine-learning) | ClinTrialMatch · HEALTHPLUS US · Academic Advising Assistant |
-| [🗄️ Database & Data Engineering](#️-database--data-engineering) | Travel Vaccination Advisory System |
-| [📈 Business Intelligence & Analytics](#-business-intelligence--analytics) | Voltex Electronics · Bike Buyer Analysis |
+| [🤖 AI & Machine Learning](#-ai--machine-learning) | [ClinTrialMatch](#1-clintrialmatch--clinical-trial-site-recommendation-engine) · [HEALTHPLUS US](#2-healthplus-us--member-segmentation--retention-analysis) · [Academic Advising Assistant](#3-academic-advising-assistant-using-rag--llm) · [Earnings Report Summarizer](#4-earnings-report-summarizer--langchain--llm) · [Bank Loan Prediction](#5-bank-loan-response-prediction--logistic-regression) |
+| [🗄️ Database & Data Engineering](#️-database--data-engineering) | [Travel Vaccination Advisory System](#6-travel-vaccination-advisory-system) |
+| [📈 Business Intelligence & Analytics](#-business-intelligence--analytics) | [Weather & Sales Analysis + KNN](#7-weather--sales-analysis--k-nearest-neighbors) · [Voltex Electronics](#8-voltex-electronics--sales-performance-analysis) · [Bike Buyer Analysis](#9-bike-buyer-analysis) |
 
 ---
 
 ### 🤖 AI & Machine Learning
 
-**1. ClinTrialMatch — Clinical Trial Site Recommendation Engine**
+#### 1. ClinTrialMatch — Clinical Trial Site Recommendation Engine
 [View Repository](https://github.com/angelintisha/clintrialmatch) · [Live App](https://tishaangelin.shinyapps.io/clintrialmatch/)
 
 `R` `Shiny` `shinyapps.io` `Content Filtering` `Similarity Scoring`
@@ -25,7 +25,7 @@ Built a web application in R/Shiny implementing a 5-step recommendation pipeline
 
 ---
 
-**2. HEALTHPLUS US — Member Segmentation & Retention Analysis**
+#### 2. HEALTHPLUS US — Member Segmentation & Retention Analysis
 [View Repository](https://github.com/angelintisha/HealthPlus-US-Member-Segmentation-And-Retention-Analysis)
 
 `Python` `Pandas` `Scikit-learn` `XGBoost` `Jupyter`
@@ -34,7 +34,7 @@ Conducted end-to-end churn analysis on 500,000 health insurance policyholder rec
 
 ---
 
-**3. Academic Advising Assistant using RAG & LLM**
+#### 3. Academic Advising Assistant using RAG & LLM
 [View Repository](https://github.com/angelintisha/Academic-Advising-Assistant-Using-Retrieval-Augmented-Generation)
 
 `Python` `LangChain` `ChromaDB` `Ollama (llama3.2)` `Streamlit`
@@ -43,9 +43,27 @@ Built a Retrieval-Augmented Generation (RAG) chatbot in Python using LangChain f
 
 ---
 
+#### 4. Earnings Report Summarizer — LangChain & LLM
+[View Repository](https://github.com/angelintisha/earnings-report-summarizer)
+
+`Python` `LangChain` `Ollama (llama3.2)` `Prompt Engineering`
+
+Built a structured financial document summarizer using LangChain document loaders, a custom prompt template enforcing a six-section output format (Financial Highlights, Segment Highlights, Cash Flow & Capex, Strategic Moves, Key Risks), and a locally hosted LLM (Ollama/llama3.2) for inference — applied to Nvidia's Q2 FY2025 earnings report. The pipeline joins multi-page documents into a single text block, passes them through a structured PromptTemplate, and produces consistent, auditable summaries with no external API or internet connection required at runtime. Demonstrates a prompt engineering and LangChain architecture directly transferable to healthcare document summarization — e.g., clinical study reports, regulatory submissions, and adverse event narratives.
+
+---
+
+#### 5. Bank Loan Response Prediction — Logistic Regression
+[View Repository](https://github.com/angelintisha/bank-loan-prediction)
+
+`Python` `Pandas` `Scikit-learn` `Logistic Regression`
+
+Built a binary classification model predicting whether a bank customer will respond to a personal loan offer, using logistic regression on 5,000 customer records with demographic and relationship attributes (age, income, education, family size, credit card spend, account holdings). Resolved dummy variable encoding for the Education column, applied a 60/40 train/test split, and evaluated model performance using confusion matrices and accuracy scores on both sets — achieving similar train and test accuracy, confirming the model is not overfitting. Extended the model to predict loan response for a new customer profile (Age=40, Income=84K, Graduate education), demonstrating an end-to-end classification workflow from data preparation through prediction.
+
+---
+
 ### 🗄️ Database & Data Engineering
 
-**4. Travel Vaccination Advisory System**
+#### 6. Travel Vaccination Advisory System
 [View Repository](https://github.com/angelintisha/Travel-Vaccination-Advisory-System-DB)
 
 `Oracle SQL` `Relational Database Design` `ERD Modeling` `BCNF Normalization`
@@ -56,7 +74,16 @@ Designed and implemented a fully normalized (BCNF) relational database for a Tra
 
 ### 📈 Business Intelligence & Analytics
 
-**5. Voltex Electronics — Sales Performance Analysis**
+#### 7. Weather & Sales Analysis + K-Nearest Neighbors
+[View Repository](https://github.com/angelintisha/weather-sales-knn)
+
+`Python` `NumPy` `Matplotlib` `KNN`
+
+Analyzed a daily weather and sales dataset using NumPy Boolean array filtering to identify that high-sales days (sales > $500K) are warmer on average than all days in the dataset, visualized the three-variable relationship between temperature, precipitation, and sales using marker-differentiated scatter plots, and converted temperature readings from Fahrenheit to Celsius across the full array. Extended the analysis with a manual K-Nearest Neighbors implementation (no sklearn) to find the 5 most similar stocks to a query profile (4.5% growth, $4B market cap, 0.5 risk), applying min-max normalization across all features before computing Euclidean distances — demonstrating that feature scaling is essential for distance-based similarity methods.
+
+---
+
+#### 8. Voltex Electronics — Sales Performance Analysis
 [View Repository](https://github.com/angelintisha/Voltex-Electronics-Sales-Performance-Analysis)
 
 `Excel` `Tableau`
@@ -65,7 +92,7 @@ Cleaned and analyzed 108,127 global e-commerce orders for a multinational electr
 
 ---
 
-**6. Bike Buyer Analysis**
+#### 9. Bike Buyer Analysis
 [View Repository](https://github.com/angelintisha/Bike-Buyer-Analysis)
 
 `Excel` `Pivot Tables` `Interactive Dashboard`
