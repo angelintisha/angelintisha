@@ -8,9 +8,9 @@
 
 | Category | Projects |
 |---|---|
-| [🤖 AI & Machine Learning](#-ai--machine-learning) | [ClinTrialMatch](#1-clintrialmatch--clinical-trial-site-recommendation-engine) · [HEALTHPLUS US](#2-healthplus-us--member-segmentation--retention-analysis) · [Academic Advising Assistant](#3-academic-advising-assistant-using-rag--llm) · [Earnings Report Summarizer](#4-earnings-report-summarizer--langchain--llm) · [Bank Loan Prediction](#5-bank-loan-response-prediction--logistic-regression) |
-| [🗄️ Database & Data Engineering](#️-database--data-engineering) | [Travel Vaccination Advisory System](#6-travel-vaccination-advisory-system) |
-| [📈 Business Intelligence & Analytics](#-business-intelligence--analytics) | [Weather & Sales Analysis + KNN](#7-weather--sales-analysis--k-nearest-neighbors) · [Voltex Electronics](#8-voltex-electronics--sales-performance-analysis) · [Bike Buyer Analysis](#9-bike-buyer-analysis) |
+| 🤖 AI & Machine Learning | [ClinTrialMatch — Clinical Trial Site Recommendation Engine](#1-clintrialmatch--clinical-trial-site-recommendation-engine) · [HEALTHPLUS US — Member Segmentation & Retention Analysis](#2-healthplus-us--member-segmentation--retention-analysis) · [Academic Advising Assistant — RAG & LLM Chatbot](#3-academic-advising-assistant-using-rag--llm) · [Earnings Report Summarizer — LangChain & LLM](#4-earnings-report-summarizer--langchain--llm) · [Bank Loan Prediction — Logistic Regression](#5-bank-loan-response-prediction--logistic-regression) |
+| 🗄️ Database & Data Engineering | [Travel Vaccination Advisory System — Relational Database Design](#6-travel-vaccination-advisory-system) |
+| 📈 Business Intelligence & Analytics | [Voltex Electronics — Sales Performance Analysis](#8-voltex-electronics--sales-performance-analysis) · [Weather & Sales Analysis — Descriptive Stats & KNN](#7-weather--sales-analysis--k-nearest-neighbors) · [Bike Buyer Analysis — Customer Segmentation Dashboard](#9-bike-buyer-analysis) |
 
 ---
 
