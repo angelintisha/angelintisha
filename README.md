@@ -10,7 +10,7 @@
 |---|---|
 | 🤖 AI & Machine Learning | [ClinTrialMatch — Clinical Trial Site Recommendation Engine](#1-clintrialmatch--clinical-trial-site-recommendation-engine) · [HEALTHPLUS US — Member Segmentation & Retention Analysis](#2-healthplus-us--member-segmentation--retention-analysis) · [Academic Advising Assistant — RAG & LLM Chatbot](#3-academic-advising-assistant-using-rag--llm) · [Earnings Report Summarizer — LangChain & LLM](#4-earnings-report-summarizer--langchain--llm) · [Bank Loan Prediction — Logistic Regression](#5-bank-loan-response-prediction--logistic-regression) |
 | 🗄️ Database & Data Engineering | [Travel Vaccination Advisory System — Relational Database Design](#6-travel-vaccination-advisory-system) |
-| 📈 Business Intelligence & Analytics | [Voltex Electronics — Sales Performance Analysis](#8-voltex-electronics--sales-performance-analysis) · [Weather & Sales Analysis — Descriptive Stats & KNN](#7-weather--sales-analysis--k-nearest-neighbors) · [Bike Buyer Analysis — Customer Segmentation Dashboard](#9-bike-buyer-analysis) |
+| 📈 Business Intelligence & Analytics | [Voltex Electronics — Sales Performance Analysis](#7-voltex-electronics--sales-performance-analysis) · [Weather & Sales Analysis — Descriptive Stats & KNN](#8-weather--sales-analysis--k-nearest-neighbors) · [Bike Buyer Analysis — Customer Segmentation Dashboard](#9-bike-buyer-analysis) |
 
 ---
 
@@ -72,23 +72,23 @@ Designed and implemented a fully normalized (BCNF) relational database for a Tra
 
 ---
 
-### 📈 Business Intelligence & Analytics
-
-#### 7. Weather & Sales Analysis + K-Nearest Neighbors
-[View Repository](https://github.com/angelintisha/weather-sales-knn)
-
-`Python` `NumPy` `Matplotlib` `KNN`
-
-Analyzed a daily weather and sales dataset using NumPy Boolean array filtering to identify that high-sales days (sales > $500K) are warmer on average than all days in the dataset, visualized the three-variable relationship between temperature, precipitation, and sales using marker-differentiated scatter plots, and converted temperature readings from Fahrenheit to Celsius across the full array. Extended the analysis with a manual K-Nearest Neighbors implementation (no sklearn) to find the 5 most similar stocks to a query profile (4.5% growth, $4B market cap, 0.5 risk), applying min-max normalization across all features before computing Euclidean distances — demonstrating that feature scaling is essential for distance-based similarity methods.
-
----
-
-#### 8. Voltex Electronics — Sales Performance Analysis
+#### 7. Voltex Electronics — Sales Performance Analysis
 [View Repository](https://github.com/angelintisha/Voltex-Electronics-Sales-Performance-Analysis)
 
 `Excel` `Tableau`
 
 Cleaned and analyzed 108,127 global e-commerce orders for a multinational electronics retailer in Excel, resolving 15 data quality issues including duplicates, null values, and currency inconsistencies across regional datasets, before building an interactive Tableau dashboard with filters by region, product category, and time period to surface revenue trends and performance drivers. Analysis identified a COVID-driven 3x revenue spike peaking at $883K monthly and revealed that the top 3 products drove 85% of $24M in total revenue, alongside regional concentration and seasonal demand patterns across 4 years of order data. Findings directly support marketing spend reallocation toward top-performing SKUs and inventory planning ahead of demand peaks; the revenue concentration insight additionally flags supply chain risk and informs product diversification strategy.
+
+---
+
+### 📈 Business Intelligence & Analytics
+
+#### 8. Weather & Sales Analysis + K-Nearest Neighbors
+[View Repository](https://github.com/angelintisha/weather-sales-knn)
+
+`Python` `NumPy` `Matplotlib` `KNN`
+
+Analyzed a daily weather and sales dataset using NumPy Boolean array filtering to identify that high-sales days (sales > $500K) are warmer on average than all days in the dataset, visualized the three-variable relationship between temperature, precipitation, and sales using marker-differentiated scatter plots, and converted temperature readings from Fahrenheit to Celsius across the full array. Extended the analysis with a manual K-Nearest Neighbors implementation (no sklearn) to find the 5 most similar stocks to a query profile (4.5% growth, $4B market cap, 0.5 risk), applying min-max normalization across all features before computing Euclidean distances — demonstrating that feature scaling is essential for distance-based similarity methods.
 
 ---
 
