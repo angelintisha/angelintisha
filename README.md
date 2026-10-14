@@ -8,24 +8,16 @@
 
 | Category | Projects |
 |---|---|
-| 🤖 AI & Machine Learning | [ClinTrialMatch — Clinical Trial Site Recommendation Engine](#1-clintrialmatch--clinical-trial-site-recommendation-engine) · [HEALTHPLUS US — Member Segmentation & Retention Analysis](#2-healthplus-us--member-segmentation--retention-analysis) · [Academic Advising Assistant — RAG & LLM Chatbot](#3-academic-advising-assistant-using-rag--llm) · [Earnings Report Summarizer — LangChain & LLM](#4-earnings-report-summarizer--langchain--llm) · [Bank Loan Prediction — Logistic Regression](#5-bank-loan-response-prediction--logistic-regression) |
-| 🗄️ Database & Data Engineering | [Travel Vaccination Advisory System — Relational Database Design](#6-travel-vaccination-advisory-system) |
-| 📈 Business Intelligence & Analytics | [Voltex Electronics — Sales Performance Analysis](#7-voltex-electronics--sales-performance-analysis) · [Weather & Sales Analysis — Descriptive Stats & KNN](#8-weather--sales-analysis--k-nearest-neighbors) · [Bike Buyer Analysis — Customer Segmentation Dashboard](#9-bike-buyer-analysis) |
+| 🤖 AI & Machine Learning | [HEALTHPLUS US — Member Segmentation & Retention Analysis](#1-healthplus-us--member-segmentation--retention-analysis) · [Academic Advising Assistant — RAG & LLM Chatbot](#2-academic-advising-assistant-using-rag--llm) · [ClinTrialMatch — Clinical Trial Site Recommendation Engine](#3-clintrialmatch--clinical-trial-site-recommendation-engine) · [Earnings Report Summarizer — LangChain & LLM](#4-earnings-report-summarizer--langchain--llm) · [Bank Loan Prediction — Logistic Regression](#5-bank-loan-response-prediction--logistic-regression) |
+| 🏥 Healthcare AI Strategy & Research | [Severity-Specific EMS Demand Forecasting — AI & BI Proposal](#6-severity-specific-ems-demand-forecasting--ai--bi-proposal) |
+| 🗄️ Database & Data Engineering | [Travel Vaccination Advisory System — Relational Database Design](#7-travel-vaccination-advisory-system) |
+| 📈 Business Intelligence & Analytics | [Offshore Delivery Center Site Selection — Tableau Decision Dashboard](#8-offshore-delivery-center-site-selection--tableau-decision-dashboard) · [Voltex Electronics — Sales Performance Analysis](#9-voltex-electronics--sales-performance-analysis) · [Weather & Sales Analysis — Descriptive Stats & KNN](#10-weather--sales-analysis--k-nearest-neighbors) · [Bike Buyer Analysis — Customer Segmentation Dashboard](#11-bike-buyer-analysis) |
 
 ---
 
 ### 🤖 AI & Machine Learning
 
-#### 1. ClinTrialMatch — Clinical Trial Site Recommendation Engine
-[View Repository](https://github.com/angelintisha/clintrialmatch) · [Live App](https://tishaangelin.shinyapps.io/clintrialmatch/)
-
-`R` `Shiny` `shinyapps.io` `Content Filtering` `Similarity Scoring`
-
-Built a web application in R/Shiny implementing a 5-step recommendation pipeline — content filtering by trial phase and therapeutic area, similarity scoring across 4 normalized site attributes (enrollment rate, screen failure rate, PI experience, infrastructure), dynamic urgency-based weighting, collaborative filtering proxy via region bonus, and composite ranking — applied against a database of 20 U.S. investigator sites. Deployed live on shinyapps.io with no API or login required. Phase III Oncology (West, Accelerated) surfaces Stanford and MD Anderson with 94–96/100 match scores; Phase I Cardiology (East, Standard) surfaces Penn Medicine and Johns Hopkins, confirming the engine differentiates meaningfully across inputs. Addresses a critical gap in the $50B+ clinical trial market where site selection is entirely manual — a leading cause of the 80% of trials that miss enrollment timelines, costing sponsors $600K–$8M per month of delay — replacing enterprise CTMS tools priced at $50K–$500K/year with a zero-cost, browser-accessible prototype.
-
----
-
-#### 2. HEALTHPLUS US — Member Segmentation & Retention Analysis
+#### 1. HEALTHPLUS US — Member Segmentation & Retention Analysis
 [View Repository](https://github.com/angelintisha/HealthPlus-US-Member-Segmentation-And-Retention-Analysis)
 
 `Python` `Pandas` `Scikit-learn` `XGBoost` `Jupyter`
@@ -34,12 +26,21 @@ Conducted end-to-end churn analysis on 500,000 health insurance policyholder rec
 
 ---
 
-#### 3. Academic Advising Assistant using RAG & LLM
+#### 2. Academic Advising Assistant using RAG & LLM
 [View Repository](https://github.com/angelintisha/Academic-Advising-Assistant-Using-Retrieval-Augmented-Generation)
 
 `Python` `LangChain` `ChromaDB` `Ollama (llama3.2)` `Streamlit`
 
 Built a Retrieval-Augmented Generation (RAG) chatbot in Python using LangChain for orchestration, ChromaDB as the vector store, and a locally hosted LLM (Ollama/llama3.2) for inference, ingesting 5 institutional document types (program handbooks, course catalogs, policies, FAQs, advising guides) into a semantic search pipeline and deploying the interface via Streamlit. The system achieved accurate, grounded responses across 7 distinct advising question categories by anchoring all outputs to retrieved source documents, eliminating hallucination. Demonstrates a production-ready RAG architecture directly applicable to high-stakes healthcare settings — clinical protocol Q&A, regulatory guidance retrieval, and patient-facing advisory systems — where LLM accuracy and full auditability are non-negotiable requirements.
+
+---
+
+#### 3. ClinTrialMatch — Clinical Trial Site Recommendation Engine
+[View Repository](https://github.com/angelintisha/clintrialmatch) · [Live App](https://tishaangelin.shinyapps.io/clintrialmatch/)
+
+`R` `Shiny` `shinyapps.io` `Content Filtering` `Similarity Scoring`
+
+Built a web application in R/Shiny implementing a 5-step recommendation pipeline — content filtering by trial phase and therapeutic area, similarity scoring across 4 normalized site attributes (enrollment rate, screen failure rate, PI experience, infrastructure), dynamic urgency-based weighting, collaborative filtering proxy via region bonus, and composite ranking — applied against a database of 20 U.S. investigator sites. Deployed live on shinyapps.io with no API or login required. Phase III Oncology (West, Accelerated) surfaces Stanford and MD Anderson with 94–96/100 match scores; Phase I Cardiology (East, Standard) surfaces Penn Medicine and Johns Hopkins, confirming the engine differentiates meaningfully across inputs. Addresses a critical gap in the $50B+ clinical trial market where site selection is entirely manual — a leading cause of the 80% of trials that miss enrollment timelines, costing sponsors $600K–$8M per month of delay — replacing enterprise CTMS tools priced at $50K–$500K/year with a zero-cost, browser-accessible prototype.
 
 ---
 
@@ -61,9 +62,20 @@ Built a binary classification model predicting whether a bank customer will resp
 
 ---
 
+### 🏥 Healthcare AI Strategy & Research
+
+#### 6. Severity-Specific EMS Demand Forecasting — AI & BI Proposal
+[View Repository](https://github.com/angelintisha/NYC-EMS-Severity-Demand-Forecasting) · [Read the Proposal (PDF)](https://github.com/angelintisha/NYC-EMS-Severity-Demand-Forecasting/blob/main/EMS_Demand_Forecasting_Proposal.pdf)
+
+`Healthcare AI Strategy` `Time-Series Forecasting Design` `BI Dashboard Design` `NIST AI RMF` `NYC Open Data` `Implementation Planning`
+
+Authored a proposal for an AI- and BI-enabled demand forecasting system for FDNY EMS that would convert Computer Aided Dispatch history into forecasts of incident counts by severity segment, dispatch area, and time window, addressing a rise in average response time to life-threatening emergencies from 9:34 to 11:21 between FY2021 and FY2025. The proposal specifies a four-layer architecture (data foundation, forecasting engine, BI delivery, decision layer) and a comparison of seasonal-naive baselines, statistical count models, and gradient-boosted trees under rolling-origin validation, with error reported per severity segment so that performance on common low-acuity calls cannot mask weak performance on rare Segment 1 emergencies (under 2% of incidents). It includes a conceptual dashboard mock-up, NIST AI RMF-aligned governance, an 18-month gated rollout with shadow mode and matched comparison areas, and five KPIs spanning forecast accuracy, adoption, response time, and borough equity. The system runs alongside the 911 dispatch path rather than inside it, leaving every operational decision with EMS personnel.
+
+---
+
 ### 🗄️ Database & Data Engineering
 
-#### 6. Travel Vaccination Advisory System
+#### 7. Travel Vaccination Advisory System
 [View Repository](https://github.com/angelintisha/Travel-Vaccination-Advisory-System-DB)
 
 `Oracle SQL` `Relational Database Design` `ERD Modeling` `BCNF Normalization`
@@ -72,8 +84,19 @@ Designed and implemented a fully normalized (BCNF) relational database for a Tra
 
 ---
 
-#### 7. Voltex Electronics — Sales Performance Analysis
-[View Repository](https://github.com/angelintisha/Voltex-Electronics-Sales-Performance-Analysis)
+### 📈 Business Intelligence & Analytics
+
+#### 8. Offshore Delivery Center Site Selection — Tableau Decision Dashboard
+[View Repository](https://github.com/angelintisha/Offshore-Delivery-Center-Site-Selection-Tableau) · [Live Dashboard](https://public.tableau.com/views/CountryReadinessDashboardXYZOffshoreDeliveryCenter/ExecutiveDashboard)
+
+`Tableau` `LOD Expressions` `Parameters` `K-Means Clustering` `Sensitivity Analysis` `OECD Going Digital`
+
+Built a Tableau decision framework to shortlist countries for a hypothetical U.S. clinical data management company's first offshore delivery center, scoring 43 candidate countries on nine OECD Going Digital indicators organized into four strategic pillars (Talent, Trust & Data Security, Digital Infrastructure, Market Openness). Used level-of-detail expressions for pillar scores, parameter-driven weight sliders for sensitivity testing across four scenarios, k-means clustering to segment 31 fully scorable countries into three strategic profiles, and a two-tier screen that separates observed risk from missing data. Data validation was material to the outcome: deduplicating 42 double-classified records moved one country from sixth to fourth, and separating evidence gaps from risk cut flagged countries from 25 to 16. Cluster assignments were independently reproduced outside Tableau with identical results. The analysis recommended Finland, Sweden, and Ireland for due diligence (stable across weighting scenarios, no risk flags), and showed that most emerging markets, including India, Brazil, and Costa Rica, could not be ranked due to OECD coverage gaps rather than weak performance — a distinction that prevents a location decision from being made by default.
+
+---
+
+#### 9. Voltex Electronics — Sales Performance Analysis
+[View Repository](https://github.com/angelintisha/Voltex-Electronics-Sales-Performance-Analysis) · [Live Dashboard](https://public.tableau.com/app/profile/angelin.tisha/viz/SalesPerformanceDashboardProduct/Dashboard1)
 
 `Excel` `Tableau`
 
@@ -81,9 +104,7 @@ Cleaned and analyzed 108,127 global e-commerce orders for a multinational electr
 
 ---
 
-### 📈 Business Intelligence & Analytics
-
-#### 8. Weather & Sales Analysis + K-Nearest Neighbors
+#### 10. Weather & Sales Analysis + K-Nearest Neighbors
 [View Repository](https://github.com/angelintisha/weather-sales-knn)
 
 `Python` `NumPy` `Matplotlib` `KNN`
@@ -92,7 +113,7 @@ Analyzed a daily weather and sales dataset using NumPy Boolean array filtering t
 
 ---
 
-#### 9. Bike Buyer Analysis
+#### 11. Bike Buyer Analysis
 [View Repository](https://github.com/angelintisha/Bike-Buyer-Analysis)
 
 `Excel` `Pivot Tables` `Interactive Dashboard`
